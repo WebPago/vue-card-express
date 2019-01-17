@@ -1,0 +1,26 @@
+{
+  "name": "vue-card-express",
+  "version": "1.0.0",
+  "description": "leitor de cartoes de credito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebPago/vue-card-express.git"
+  },
+  "keywords": [
+    "cards",
+    "number",
+    "cards",
+    "bin",
+    "cards"
+  ],
+  "author": "rodrigo paiva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebPago/vue-card-express/issues"
+  },
+  "homepage": "https://github.com/WebPago/vue-card-express#readme"
+}
