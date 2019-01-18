@@ -4,21 +4,17 @@ Leitor de Bin de Cartões
 
 ![img](https://raw.githubusercontent.com/WebPago/vue-card-express/master/imagens/elo.JPG)
 
-![img](https://raw.githubusercontent.com/WebPago/vue-card-express/master/imagens/visa.JPG)
 
-![img](https://raw.githubusercontent.com/WebPago/vue-card-express/master/imagens/master.JPG)
-
-
-#install 
+# install 
 
 npm i vue-card-express
 
 
-#import 
+# import 
 import vueCard from 'vue-card-express'
 
 
-#exemplo 
+# exemplo 
 
 <script>
 import vueCard from 'vue-card-express'
