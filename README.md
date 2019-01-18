@@ -33,9 +33,7 @@ Leitor de Bin de Cartões
 </script>
 <template>
    <div>
-      <vue-card :number='number' :cvv='cvv' :mes='mes'
-         :ano='ano' :nome='nome'
-       ></vue-card>
+      <vue-card :number='number' :cvv='cvv' :mes='mes' :ano='ano' :nome='nome'/>
    </div>
 </template>
 ````
