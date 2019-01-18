@@ -24,9 +24,9 @@ Leitor de Bin de Cartões
    },
    data: () => ({
      number: '000000000000000',
-     ano: 2018,
-     cvv: 888,
-     mes: 04,
+     ano: '2018',
+     cvv: '085',
+     mes: '05',
      nome: 'WEBPAGO SA'
    })
  }
