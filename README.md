@@ -45,7 +45,7 @@ Leitor de Bin de Cartões
 - Mastercard
 - Visa
 - Elo
-- JCB
+- JCB Card
 - American Express
 - Citibank
 - Diners Club
