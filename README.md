@@ -15,7 +15,7 @@ Leitor de Bin de Cartões
 
 
 # exemplo 
--
+```js
 <script>
  import vueCard from 'vue-card-express'
  export default {
@@ -38,4 +38,4 @@ Leitor de Bin de Cartões
        ></vue-card>
    </div>
 </template>
--
+````
