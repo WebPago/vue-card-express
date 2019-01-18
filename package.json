@@ -1,6 +1,6 @@
 {
   "name": "vue-card-express",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "leitor de cartoes de credito",
   "main": "index.js",
   "scripts": {
