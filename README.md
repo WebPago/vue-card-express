@@ -39,3 +39,16 @@ Leitor de Bin de Cartões
    </div>
 </template>
 ````
+
+# BIN CARDS
+
+- Mastercard
+- Visa
+- Elo
+- JCB
+- American Express
+- Citibank
+- Diners Club
+
+
+
