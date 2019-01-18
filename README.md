@@ -2,4 +2,4 @@
 
 Leitor de Bin de Cartões 
 
-(https://github.com/WebPago/vue-card-express/blob/master/imagens/elo.JPG?raw=true)
+![img](https://raw.githubusercontent.com/WebPago/vue-card-express/master/imagens/elo.JPG)
