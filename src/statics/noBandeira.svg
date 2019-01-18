@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="8.4666mm" height="6.131mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 847 613"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil4 {fill:#665248}
+    .fil0 {fill:#D5B89A}
+    .fil3 {fill:#E4D6B6}
+    .fil1 {fill:#E74C3D}
+    .fil2 {fill:#F0C41B}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2105027108544">
+   <path id="XMLID_118_" class="fil0" d="M800 613l-753 0c-26,0 -47,-21 -47,-47l0 -519c0,-26 21,-47 47,-47l753 0c26,0 47,21 47,47l0 519c0,26 -21,47 -47,47z"/>
+   <path id="XMLID_117_" class="fil1" d="M671 175c0,49 -39,88 -87,88 -48,0 -88,-39 -88,-88 0,-48 40,-87 88,-87 48,0 87,39 87,87z"/>
+   <path id="XMLID_116_" class="fil2" d="M774 175c0,49 -40,88 -88,88 -48,0 -87,-39 -87,-88 0,-48 39,-87 87,-87 48,0 88,39 88,87z"/>
+   <path id="XMLID_115_" class="fil3" d="M204 102l-131 0c-8,0 -15,7 -15,15 0,8 7,14 15,14l131 0c8,0 15,-6 15,-14 0,-8 -7,-15 -15,-15z"/>
+   <path id="XMLID_114_" class="fil3" d="M409 117c0,-8 -7,-15 -15,-15l-131 0c-8,0 -15,7 -15,15 0,8 7,14 15,14l131 0c8,0 15,-6 15,-14z"/>
+   <path id="XMLID_113_" class="fil3" d="M88 175l-15 0c-8,0 -15,7 -15,15 0,8 7,14 15,14l15 0c8,0 14,-6 14,-14 0,-8 -6,-15 -14,-15z"/>
+   <path id="XMLID_112_" class="fil3" d="M175 175l-29 0c-8,0 -15,7 -15,15 0,8 7,14 15,14l29 0c8,0 15,-6 15,-14 0,-8 -7,-15 -15,-15z"/>
+   <path id="XMLID_111_" class="fil3" d="M248 175l-14 0c-9,0 -15,7 -15,15 0,8 6,14 15,14l14 0c8,0 15,-6 15,-14 0,-8 -7,-15 -15,-15z"/>
+   <path id="XMLID_110_" class="fil3" d="M336 175l-29 0c-9,0 -15,7 -15,15 0,8 6,14 15,14l29 0c8,0 14,-6 14,-14 0,-8 -6,-15 -14,-15z"/>
+   <path id="XMLID_109_" class="fil3" d="M384 179c-3,3 -4,7 -4,11 0,4 1,7 4,10 3,3 6,4 10,4 4,0 8,-1 11,-4 2,-3 4,-6 4,-10 0,-4 -2,-8 -4,-10 -6,-6 -16,-6 -21,-1z"/>
+   <rect id="XMLID_108_" class="fil4" x="73" y="423" width="131.38" height="87.5855"/>
+   <rect id="XMLID_107_" class="fil4" x="263" y="423" width="131.38" height="87.5855"/>
+   <rect id="XMLID_106_" class="fil4" x="453" y="423" width="131.38" height="87.5855"/>
+   <rect id="XMLID_105_" class="fil4" x="642" y="423" width="131.38" height="87.5855"/>
+  </g>
+ </g>
+</svg>
