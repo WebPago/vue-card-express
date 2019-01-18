@@ -48,5 +48,8 @@ Leitor de Bin de Cartões
 - Citibank
 - Diners Club
 
+# Geradores de cartão 
 
+para teste use 
+<a href='https://www.4devs.com.br/gerador_de_numero_cartao_credito' >4Dev</a>
 
