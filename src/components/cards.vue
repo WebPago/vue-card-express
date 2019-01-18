@@ -3,7 +3,7 @@
     <div class="frente">
       <div class="corpo">
         <div class="chip">
-          <img src='./../statics/chipcartao.png' />
+          <img src='./../img/chipcartao.png' />
         </div>
         <div class="numero">
           {{number | formattype}}
@@ -18,7 +18,9 @@
             </div>
           </div>
           <div class="bandeira">
-            <img :src="bandeiraImg" alt="">
+            <div :class="bandeiraImg">
+            </div>
+            <!-- <img :src="bandeiraImg" alt=""> -->
           </div>
         </div>
       </div>
@@ -34,7 +36,9 @@
           {{cvv}}
         </div>
         <div class="bandeira">
-          <img :src="bandeiraImg" alt="">
+          <div :class="bandeiraImg">
+          </div>
+          <!-- <img :src="bandeiraImg" alt=""> -->
         </div>
       </div>
     </div>
@@ -76,10 +80,10 @@ export default {
   computed: {
     bandeiraImg () {
       if (this.bandeira) {
-        return './../statics/' + this.bandeira + '.svg'
+        return this.bandeira
       }
       else {
-        return './../statics/noBandeira.svg'
+        return 'noBandeira'
       }
     }
   },
@@ -114,84 +118,29 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-.cartao
-  display flex
-  flex-direction column
-  align-items center
-  justify-content center
-  .frente
-    background linear-gradient(#afafaf, #dddddd, #ccc, #afafaf)
-    width 250px
-    height 150px
-    border-radius 10px
-    box-shadow 2px 1px 0px #ccc
-    border 1px solid #cccc
-    overflow hidden
-    .corpo
-      background url('./../statics/mapacartao.png') no-repeat center
-      padding 10px
-      height 100%
-      .chip
-        margin-top 25px
-        img
-          max-width 40px
-    .numero
-      height 25px
-      margin-top 5px
-      font-weight bold
-      text-shadow:1px 0px 2px #5f5f5f
-    .rodape
-      display flex
-      flex-direction row
-      .dados
-         width 70%
-         font-size 13px
-         text-shadow:1px 0px 2px #5f5f5f
-         font-weight bold
-         .datas
-           text-align center
-           padding 6px
-          .nome
-            font-size 11px
-            padding 2px
-      .bandeira
-         width 30%
-         display flex
-         justify-content center
-         img
-           width 100%
-           max-width 100px
-  .verso
-    background linear-gradient(#afafaf, #dddddd, #ccc, #afafaf)
-    margin-top 10px
-    width 250px
-    height 150px
-    border-radius 10px
-    box-shadow 2px 1px 0px #ccc
-    border 1px solid #cccc
-    overflow hidden
-    .corpo
-      background url('./../statics/mapacartao.png') no-repeat center
-      height 100%
-      margin 0px
-      .tarja
-        width 100%
-        padding-top 20px
-        .magnetica
-           height 40px
-           background #000
-           width 100%
-      .cvv
-        height 30px
-        background #fff
-        margin 5px
-        max-width 180px
-        padding 5px
-        text-align: right
-       .bandeira
-         padding 10px
-         img
-           width 100%
-           max-width 50px
-
+@import './style.styl'
+.noBandeira
+ background: url('./../img/noBandeira.svg') no-repeat center
+ width 100%
+.mastercard
+ background: url('./../img/mastercard.svg') no-repeat center
+ width 100%
+.amex
+ background: url('./../img/amex.svg') no-repeat center
+ width 100%
+.citi
+ background: url('./../img/citi.svg') no-repeat center
+ width 100%
+.elo
+ background: url('./../img/elo.svg') no-repeat center
+ width 100%
+.jcb
+ background: url('./../img/jcb.svg') no-repeat center
+ width 100%
+.visa
+ background: url('./../img/visa.svg') no-repeat center
+ width 100%
+.dinersclub
+ background: url('./../img/dinersclub.svg') no-repeat center
+ width 100%
 </style>
