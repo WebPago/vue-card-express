@@ -45,7 +45,7 @@ import v from './../bin/binCards'
 export default {
   props: {
     number: {
-      default: this.numberInicio,
+      default: '0000 0000 0000 0000',
       required: true
     },
     cvv: {
