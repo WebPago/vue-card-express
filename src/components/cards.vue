@@ -52,13 +52,16 @@ export default {
       required: true
     },
     mes: {
-      default: '00'
+      default: '00',
+      required: true
     },
     ano: {
-      default: '0000'
+      default: '0000',
+      required: true
     },
     nome: {
-      default: 'NOME CLIENTE'
+      default: 'NOME CLIENTE',
+      required: true
     }
   },
   filters: {
