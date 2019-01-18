@@ -7,11 +7,11 @@ Leitor de Bin de Cartões
 
 # install 
 
-- npm i vue-card-express
+<code>npm i vue-card-express</code>
 
 
 # import 
-- import vueCard from 'vue-card-express'
+<code>import vueCard from 'vue-card-express</code>
 
 
 # exemplo 
