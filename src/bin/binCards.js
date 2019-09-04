@@ -44,7 +44,7 @@ const cards = [
   }, {
     type: 'amex',
     patterns: [34, 37],
-    format: /(\d{1,4})(\d{1,6})?(\d{1,5})?/,
+    format: /(\d{1,4})(\ \d{1,6})?(\ \d{1,5})?/g,
     length: [15],
     cvcLength: [3, 4],
     luhn: true,
@@ -52,7 +52,7 @@ const cards = [
   }, {
     type: 'dinersclub',
     patterns: [30, 36, 38, 39],
-    format: /(\d{1,4})(\d{1,6})?(\d{1,4})?/,
+    format: /(\d{1,4})(\ \d{1,6})?(\ \d{1,4})?/g,
     length: [14],
     cvcLength: [3],
     luhn: true,
@@ -111,8 +111,6 @@ const revalidDuplicate = (list, numberCard, cvv) => {
 }
 
 const formatNumber = (card, str) => {
-  if (card.type) {
-  }
   return card
 }
 

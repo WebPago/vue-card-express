@@ -1,20 +1,21 @@
+
 # vue-card-express
 
-Leitor de Bin de Cartões 
+Leitor de Bin de Cartões
 
 ![img](https://raw.githubusercontent.com/WebPago/vue-card-express/master/imagens/cards.JPG)
 
 
-# install 
+# install
 
 <code>npm i vue-card-express</code>
 
 
-# import 
+# import
 <code>import vueCard from 'vue-card-express</code>
 
 
-# exemplo 
+# exemplo
 ```vue
 <script>
  import vueCard from 'vue-card-express'
@@ -27,13 +28,14 @@ Leitor de Bin de Cartões
      ano: '2018',
      cvv: '085',
      mes: '05',
-     nome: 'WEBPAGO SA'
+     nome: 'WEBPAGO SA',
+     side: 1
    })
  }
 </script>
 <template>
    <div>
-      <vue-card :number='number' :cvv='cvv' :mes='mes' :ano='ano' :nome='nome'/>
+      <vue-card :number='number' :cvv='cvv' :mes='mes' :ano='ano' :nome='nome' animate :side='1'/>
    </div>
 </template>
 ````
@@ -48,7 +50,6 @@ Leitor de Bin de Cartões
 - Citibank
 - Diners Club
 
-# Geradores de cartão 
+# Geradores de cartão
 
 - para teste use <a href='https://www.4devs.com.br/gerador_de_numero_cartao_credito' >4Dev</a>
-

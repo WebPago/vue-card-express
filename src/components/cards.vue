@@ -1,31 +1,28 @@
 <template>
   <div class="cartao">
-    <div class="frente">
-      <div class="corpo">
-        <div class="chip">
-          <img src='./../img/chipcartao.png' />
-        </div>
-        <div class="numero">
-          {{number | formattype}}
-        </div>
-        <div class="rodape">
-          <div class="dados">
-            <div class="datas">
-              {{mes}} / {{ano}}
-            </div>
-            <div class="nome">
-              {{nome}}
-            </div>
+      <div class="frente" v-if="animacaolado(1)">
+        <div class="corpo">
+          <div class="numero">
+            {{formattypeNumber()}}
           </div>
-          <div class="bandeira">
-            <div :class="bandeiraImg">
+          <div class="rodape">
+            <div class="dados">
+              <div class="nome">
+                {{nome}}
+              </div>
+              <div class="datas">
+                VÁLIDO ATE: {{mes}} / {{ano}}
+              </div>
             </div>
-            <!-- <img :src="bandeiraImg" alt=""> -->
+            <div class="bandeira">
+              <div :class="bandeiraImg">
+              </div>
+              <!-- <img :src="bandeiraImg" alt=""> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="verso">
+      <div class="verso" v-if="animacaolado(2)">
       <div class="corpo">
         <div class="tarja">
           <div class="magnetica">
@@ -53,7 +50,8 @@ export default {
       required: true
     },
     cvv: {
-      required: true
+      required: true,
+      default: '000'
     },
     mes: {
       default: '00',
@@ -66,17 +64,22 @@ export default {
     nome: {
       default: 'NOME CLIENTE',
       required: true
-    }
-  },
-  filters: {
-    formattype (value) {
-      return value
+    },
+    animate: {
+      default: false,
+      type: Boolean
+    },
+    side: {
+      default: 0
     }
   },
   data: () => ({
     bandeira: null,
     numberInicio: '0000 0000 0000 0000'
   }),
+  mounted () {
+    this.formataValore()
+  },
   computed: {
     bandeiraImg () {
       if (this.bandeira) {
@@ -88,11 +91,50 @@ export default {
     }
   },
   methods: {
+    formataValore () {
+      // if (!this.mes) {
+      //   this.mes = '00'
+      // }
+      // if (!this.ano) {
+      //   this.ano = '0000'
+      // }
+      // if (!this.nome) {
+      //   this.nome = 'WEBPAGO INC'
+      // }
+      // if (!this.cvv) {
+      //   this.cvv = '000'
+      // }
+    },
+    formattypeNumber () {
+      if (this.number) {
+        if (this.SomenteNumeros(this.number).length >= 13) {
+          var card = v.validaCards(this.SomenteNumeros(this.number), this.cvv)
+          if (card) {
+            if (card.type) {
+              var result = this.number.toString().replace(card.format, '$1 ')
+              return result
+            }
+          }
+        }
+        return this.SomenteNumeros(this.number)
+      }
+      return '0000 0000 0000 0000'
+    },
+    animacaolado (lado) {
+      if (this.animate) {
+        if (this.side === 0 && lado == 1) return true
+        else if (this.side === lado) return true
+        else return false
+      }
+      return true
+    },
     BuscarBandeira () {
       if (this.number) {
         if (this.SomenteNumeros(this.number).length >= 13) {
           var card = v.validaCards(this.SomenteNumeros(this.number), this.cvv)
-          this.bandeira = card.type
+          if (card) {
+            this.bandeira = card.type
+          }
         }
         else {
           this.bandeira = null
@@ -102,12 +144,15 @@ export default {
     SomenteNumeros (value) {
       var numero = ''
       for (var x = 0; x < value.length; x++) {
-        numero += value.charAt(x).replace(' ', '')
+        numero += value.charAt(x).replace(/\D/g, '')
       }
       return numero
     }
   },
   watch: {
+    side () {
+      this.formataValore()
+    },
     cvv () {
       this.BuscarBandeira()
     },

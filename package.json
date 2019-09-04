@@ -1,6 +1,6 @@
 {
   "name": "vue-card-express",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "leitor de cartoes de credito",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,8 @@
   "devDependencies": {
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2"
   }
 }

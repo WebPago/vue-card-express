@@ -3,75 +3,84 @@
   flex-direction column
   align-items center
   justify-content center
+  color #fff
   .frente
-    background linear-gradient(#afafaf, #dddddd, #ccc, #afafaf)
-    width 250px
-    height 150px
+    width 100%
+    height 100%
     border-radius 10px
-    box-shadow 2px 1px 0px #ccc
-    border 1px solid #cccc
     overflow hidden
     .corpo
-      background url('./../img/mapacartao.png') no-repeat center
+      width 100%
+      min-height 200px
+      min-width 280px
+      background url('./../img/cartao-frente.svg') no-repeat center
       padding 10px
       height 100%
-      .chip
-        margin-top 25px
-        img
-          max-width 40px
-    .numero
-      height 25px
-      margin-top 5px
-      font-weight bold
-      text-shadow:1px 0px 2px #5f5f5f
-    .rodape
+      webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
       display flex
-      flex-direction row
-      .dados
-         width 70%
-         font-size 13px
-         text-shadow:1px 0px 2px #5f5f5f
-         font-weight bold
-         .datas
-           text-align center
-           padding 6px
-          .nome
-            font-size 11px
-            padding 2px
-      .bandeira
-         width 30%
-         display flex
-         justify-content center
+      flex-direction: column
+      justify-content: flex-end
+      align-items: flex-start
+      .numero
+        height 25px
+        font-size 18px
+        margin-top 10px
+        font-weight bold
+        text-shadow:1px 0px 2px #5f5f5f
+      .rodape
+        display flex
+        flex-direction row
+        width 100%
+        .dados
+           width 100%
+           font-size 13px
+           font-weight bold
+           .datas
+             text-align left
+             padding 6px
+            .nome
+              font-size 11px
+              padding 2px
+        .bandeira
+           width 80px
+           display flex
+           justify-content center
+           img
+             width 100%
   .verso
-    background linear-gradient(#afafaf, #dddddd, #ccc, #afafaf)
-    margin-top 10px
-    width 250px
-    height 150px
     border-radius 10px
-    box-shadow 2px 1px 0px #ccc
-    border 1px solid #cccc
     overflow hidden
+    width 100%
+    color #000
     .corpo
-      background url('./../img/mapacartao.png') no-repeat center
+      background url('./../img/cartao-verso.svg') no-repeat center
+      width 100%
       height 100%
+      min-height 200px
+      min-width 280px
       margin 0px
       .tarja
         width 100%
-        padding-top 20px
+        padding-top 30px
         .magnetica
            height 40px
            background #000
            width 100%
       .cvv
-        height 30px
+        height 35px
         background #fff
         margin 5px
         max-width 180px
+        font-size 18px
         padding 5px
         text-align: right
        .bandeira
-         width 60px
+         width 50px
          height: 50px
          padding 10px
          display flex
          justify-content center
+         margin-top 20px
